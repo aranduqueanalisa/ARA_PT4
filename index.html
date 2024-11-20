@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Matching</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Match the Numbers</h1>
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1" data-name="One">One</div>
+        <div class="box" draggable="true" id="box2" data-name="Two">Two</div>
+        <div class="box" draggable="true" id="box3" data-name="Three">Three</div>
+        <div class="box" draggable="true" id="box4" data-name="Four">Four</div>
+        <div class="box" draggable="true" id="box5" data-name="Five">Five</div>
+        <div class="box" draggable="true" id="box6" data-name="Six">Six</div>
+        <div class="box" draggable="true" id="box7" data-name="Seven">Seven</div>
+        <div class="box" draggable="true" id="box8" data-name="Eight">Eight</div>
+        <div class="box" draggable="true" id="box9" data-name="Nine">Nine</div>
+        <div class="box" draggable="true" id="box10" data-name="Ten">Ten</div>
+    </div>
+
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1">
+            <span class="item-label">One</span>
+            <span class="number-label">(1)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box2">
+            <span class="item-label">Two</span>
+            <span class="number-label">(2)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box3">
+            <span class="item-label">Thre</span>
+            <span class="number-label">(3)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box4">
+            <span class="item-label">Four</span>
+            <span class="number-label">(4)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box5">
+            <span class="item-label">Five</span>
+            <span class="number-label">(5)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box6">
+            <span class="item-label">Six</span>
+            <span class="number-label">(6)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box7">
+            <span class="item-label">Seven</span>
+            <span class="number-label">(7)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box8">
+            <span class="item-label">Eight</span>
+            <span class="number-label">(8)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box9">
+            <span class="item-label">Nine</span>
+            <span class="number-label">(9)</span>
+        </div>
+        <div class="droppable" data-draggable-id="box10">
+            <span class="item-label">Ten</span>
+            <span class="number-label">(10)</span>
+        </div>
+    </div>
+
+    <div class="board">
+        Remarks:<p id="remarks"></p>
+        Score:<p id="scores"></p>
+   
+     Time Left:<p id="timer"></p>
+    </div>
+</body>
+</html>
